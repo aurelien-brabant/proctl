@@ -42,7 +42,10 @@ fn count_cpu_file(path: &str) -> Result<u8, &str> {
         let len = parts.len();
 
         if len == 1 {
-            count += 1;
+            if parts[0].parse::<u8>().is_ok() {
+                count += 1;
+            }
+
             continue ;
         }
 
