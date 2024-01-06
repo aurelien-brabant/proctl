@@ -9,8 +9,11 @@ $(TARGET):
 .PHONY: $(TARGET)
 
 install: all
-	cp $(TARGET) /usr/local/bin
+	cp $(TARGET) $(INSTALL_DIR)
 .PHONY: install
+
+uninstall:
+	$(RM) $(INSTALL_DIR)
 
 clean:
 	$(RM) $(TARGET)

@@ -2,8 +2,19 @@
 
 A CLI tool to bring individual CPUs online or offline on Linux.
 
-Especially useful to reduce the power consumption of laptops when only a portion of the available
+Can be useful to reduce the power consumption of laptops when only a portion of the available
 processing power would suffice to get the job done.
+
+## Install
+
+```bash
+# build and install to /usr/local/bin
+
+sudo make install
+
+# uninstall binary
+sudo make uninstall
+```
 
 ## Usage
 
